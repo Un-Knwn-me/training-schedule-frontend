@@ -12,7 +12,7 @@ const columns = [
 ];
 
 const Dashboard = () => {
-  const [rows, setRows] = useState([]);
+  const [rows] = useState([]);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
@@ -58,7 +58,7 @@ const Dashboard = () => {
       description,
     };
   };
-
+console.log(createData)
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
